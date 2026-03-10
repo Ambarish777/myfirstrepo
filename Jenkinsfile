@@ -11,7 +11,7 @@ pipeline {
         publishHTML([
           //default parameters
           allowMissing:true,
-          alwaysLinktoLastBuild:false,
+          alwaysLinkToLastBuild:false,
           keepAll:false,
 
           //these paramaters changes acc.
