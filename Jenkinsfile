@@ -17,7 +17,7 @@ pipeline {
           //these paramaters changes acc.
           reportDir:'.',                 // . is root directory
           reportFiles:'demo.html',       // name of html file
-          reportName:'MY HTML PIPE PAGE'
+          reportName:'MY HTML PAGE'
         ])
       }
     }
