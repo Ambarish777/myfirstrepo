@@ -1,8 +1,8 @@
-pipeline{
+pipeline { 
   agent any
-  stages{
+  stages {
     stage('checkout'){
-      step{
+      steps{
         git 'https://github.com/Ambarish777/myfirstrepo.git'
       }
     } 
@@ -14,16 +14,12 @@ pipeline{
           alwaysLinktoLastBuild:false,
           keepAll:false,
 
-
           //these paramaters changes acc.
           reportDir:'.',                 // . is root directory
           reportFiles:'demo.html',       // name of html file
           reportName:'MY HTML PIPE PAGE'
         ])
-          
-        
       }
     }
-    
   }
-}
+} 
