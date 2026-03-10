@@ -3,8 +3,7 @@ pipeline {
   stages {
     stage('checkout'){
       steps{
-        git branch : 'main',
-        git 'https://github.com/Ambarish777/myfirstrepo.git'
+        git branch: 'main', url:'https://github.com/Ambarish777/myfirstrepo.git'
       }
     } 
     stage('Publish'){
