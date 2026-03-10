@@ -1,16 +1,16 @@
 pipeline{
   agent any
   stages{
-    stage ('checkout'){
+    stage('checkout'){
       step{
         git 'https://github.com/Ambarish777/myfirstrepo.git'
       }
     } 
-    stage ('Publish'){
+    stage('Publish'){
       steps{
         publishHTML([
           //default parameters
-          allowmissing:true,
+          allowMissing:true,
           alwaysLinktoLastBuild:false,
           keepAll:false,
 
